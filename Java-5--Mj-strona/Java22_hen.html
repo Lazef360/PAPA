@@ -1,0 +1,34 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function pole_hennig() 
+   { 
+ var a_hen= parseFloat(document.getElementById('a_dana_hen').value); 
+ var b_hen= parseFloat(document.getElementById('b_dana_hen').value); 
+ var wynik;
+ wynik=(a_hen*2)*(b_hen*2);
+        document.getElementById("nazwa").innerHTML ="Pole Prostokąta= "+wynik.toFixed(2)+" cm^2";  
+   } 
+
+  function obwod_hennig() 
+   { 
+ var a_hen= parseFloat(document.getElementById('a_dana_hen').value); 
+ var b_hen= parseFloat(document.getElementById('b_dana_hen').value); 
+  var wynik;
+ wynik=(a_hen*2)+(b_hen*2);
+        document.getElementById("nazwa").innerHTML ="Obwód Prostokąta= "+wynik.toFixed(2)+" cm";  
+   } 
+ </script> 
+
+  <h1>AAAAJ AAAAAJ AAAA </h1><br><br> 
+  Podaj długość boku A: <input type="text" id="a_dana_hen" value=""> cm<br><br>
+   Podaj długość boku B: <input type="text" id="b_dana_hen" value=""> cm<br><br><br> 
+  <input type="button" name="wyprowadz_pole_hen" value="Oblicz pole" Onclick="pole_hennig()"><br><br> 
+  <input type="button" name="wyprowadz_obwod_hen" value="Oblicz obwod" Onclick="obwod_hennig()"><br><br> 
+  <div  style="color:rgb(56, 90, 168);font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 

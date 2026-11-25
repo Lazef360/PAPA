@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hennig 2P</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<textarea style="width:100%; height:100vh;">
+    <!DOCTYPE html>   
+<head>    
+<title> Użycie fukcji </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:navy;font-size:50px;"> 
+<script language="JavaScript"> 
+var x1_hen=parseFloat(prompt("x1=","")); 
+var x2_hen=parseFloat(prompt("x2=","")); 
+
+var y1_hen;
+y1_hen= 3*Math.pow(x1_hen, (5/7));
+
+
+var x1_r_hen;
+x1_r_hen=(Math.PI*x1_hen)/180;
+
+var y2_hen;
+//
+y2_hen= 2*(Math.cos(x1_r_hen)) + (3 * (Math.sin(x1_r_hen)));
+//
+
+var y3_hen;
+y3_hen = Math.pow (Math.pow(x1_hen,5) + 2*Math.pow(x2_hen,4),1/3)*Math.abs(x1_hen-x2_hen);
+
+document.write("x1="+x1_hen+"&ensp;&ensp;&ensp;&ensp;&ensp;"+"x2="+x2_hen+"<br>"); 
+document.write("x1="+x1_hen+"&ensp;&ensp;&ensp;&ensp;&ensp;"+"x1="+x1_r_hen.toFixed(2)+"<br>"); 
+document.write("y1="+y1_hen.toFixed(2)+"<br>"); 
+document.write("y2="+y2_hen.toFixed(2)+"<br>"); 
+document.write("y3="+y3_hen.toFixed(2)+"<br>"); 
+
+</script> 
+</div> 
+</body> 
+</html>
+    </textarea>
+    </body>
+    </html>

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 32 – Hennig</title>
+</head>
+
+<body bgcolor="yellow"> 
+
+<div style="color:green;font-size:40px;"> 
+
+<script type="text/javascript">
+
+
+function Dom(wysokosc, adres, czapka, wlasciciel) {
+    this.wysokosc = wysokosc;
+    this.adres = adres;
+    this.czapka = czapka;
+    this.wlasciciel = wlasciciel;
+}
+
+
+Dom.prototype.Dom_wyswietl_Hennig = function() {
+    document.write("Wysokość: " + this.wysokosc + "<br>");
+    document.write("Adres: " + this.adres + "<br>");
+    document.write("Czapka: " + this.czapka + "<br>");
+    document.write("Właściciel: " + this.wlasciciel + "<br>");
+};
+
+
+var dom1 = new Dom("67m", "ul. Nopekińska", "zielony Tophat", "Hennig");
+var dom2 = new Dom("20m", "ul. Ogórkowa", "niebieska czapka", "Kowalski");
+var dom3 = new Dom("50m", "ul. Szczurkowa", "czerwona czapka", "Nowak");
+
+
+document.write("OBIEKT DOM1<br>");
+dom1.Dom_wyswietl_Hennig();
+
+document.write("<br>OBIEKT DOM2<br>");
+dom2.Dom_wyswietl_Hennig();
+
+document.write("<br>OBIEKT DOM3<br>");
+dom3.Dom_wyswietl_Hennig();
+
+
+dom1.nowePole = "Mój dodatkowy wpis";
+
+
+dom1.dom_pokaz_Hennig = function() {
+    document.write("Nowe pole: " + this.nowePole + "<br>");
+};
+
+document.write("<br>NOWA METODA<br>");
+dom1.dom_pokaz_Hennig();
+
+</script>
+</div>
+
+<br>
+
+<div style="color:blue;font-size:23px;"> 
+
+<br>
+Mój numer w dzienniku to jest 3 i moje dane to:<br>
+Obiekt: dom<br>
+Konstruktor: Dom<br>
+Pola:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;wysokosc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;adres<br>
+&nbsp;&nbsp;&nbsp;&nbsp;czapka<br>
+&nbsp;&nbsp;&nbsp;&nbsp;wlasciciel<br>
+Metoda przez prototype:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Dom_wyswietl_Hennig<br>
+Nowe pole:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nowePole<br>
+Nowa metoda:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dom_pokaz_Hennig<br>
+
+</div>
+
+</body>
+</html>

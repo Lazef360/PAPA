@@ -1,0 +1,32 @@
+<!DOCTYPE html>   
+<head>    
+<title> Użycie fukcji </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:rgb(132, 46, 61);font-size:50px;"> 
+<script language="JavaScript"> 
+var no_hen=parseFloat(prompt("N0=","")); 
+var t_hen=parseFloat(prompt("t=","")); 
+var T2_hen=parseFloat(prompt("T1/2=","")); 
+
+var Lambda_hen;
+var N_hen;
+
+Lambda_hen = Math.LN2/T2_hen;
+N_hen = no_hen * (Math.pow(Math.E,((-Lambda_hen)*t_hen)))
+
+
+//w przykładzie nie ma dokładności po przecinku 2??????????
+document.write("N0="+no_hen+"[sztuk]<br>"); 
+document.write("t="+t_hen+"[lat]<br>"); 
+document.write("T1/2="+T2_hen+"[lat]<br>"); 
+
+document.write("Lambda="+Lambda_hen.toFixed(7)+"[1/rok]<br>"); 
+document.write("N="+N_hen+"[sztuk]<br>"); 
+
+</script> 
+</div> 
+</body> 
+</html>
+<!--Komentarz to ja Oskar The autor strony (Hennig)-->

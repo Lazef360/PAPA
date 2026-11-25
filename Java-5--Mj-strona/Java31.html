@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 31 – Hennig</title>
+</head>
+
+<body bgcolor="lightblue">
+
+<div style="color:red;font-size:45px;"> 
+
+<script type="text/javascript">
+
+var dom = {
+    wysokosc: '67m',
+    adres: 'ogurek szczurek ul. nopekińska',
+    czapka: 'zielony Tophat',
+
+    Dom_wyswietl_Hennig: function () {
+        document.write("Dane obiektu wysokość oraz adres<br>");
+        document.write("Moje dane -> " + this.wysokosc + ", " + this.adres + "<br>");
+    }
+};
+
+dom.wlasciciel = "Hennig";
+
+dom.dom_pokaz_Hennig = function () {
+    document.write("Wlasciciel: " + this.wlasciciel + "<br>");
+};
+
+
+dom.Dom_wyswietl_Hennig();
+dom.dom_pokaz_Hennig();
+
+document.write("<br>Nazwa obiektu: dom<br>");
+document.write("Pola: wysokosc, adres, czapka, wlasciciel<br>");
+document.write("Metody: Dom_wyswietl_Hennig, dom_pokaz_Hennig<br>");
+
+</script>
+</div>
+
+<br>
+
+<div style="color:blue;font-size:28px;">
+
+<br>
+Mój numer w dzienniku to jest 3 i moje dane to:<br>
+Obiekt to dom<br>
+Pola:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wysokosc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adres<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;czapka<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wlasciciel<br>
+Metody:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dom_wyswietl_Hennig<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dom_pokaz_Hennig<br>
+
+</div>
+
+</body>
+</html>

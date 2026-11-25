@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hennig 2P</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<textarea style="width:100%; height:100vh;">
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+
+
+
+  function AB_hen() 
+   { 
+var xa_hen= parseFloat(document.getElementById('WSPOxa').value); 
+var ya_hen= parseFloat(document.getElementById('WSPOya').value); 
+
+var xb_hen= parseFloat(document.getElementById('WSPOxb').value); 
+var yb_hen= parseFloat(document.getElementById('WSPOyb').value); 
+
+var dlugosca
+
+dlugosca =  Math.sqrt(((xa_hen - xb_hen)**2)+((ya_hen - yb_hen)**2))
+
+
+        document.getElementById("nazwa").innerHTML ="Długość boku AB= "+dlugosca.toFixed(2)+"";   
+   } 
+
+
+
+
+
+
+  function BC_hen() 
+   { 
+var xb_hen= parseFloat(document.getElementById('WSPOxb').value); 
+var yb_hen= parseFloat(document.getElementById('WSPOyb').value); 
+
+var xc_hen= parseFloat(document.getElementById('WSPOxc').value); 
+var yc_hen= parseFloat(document.getElementById('WSPOyc').value); 
+
+var dlugosca
+
+dlugosca =  Math.sqrt(((xb_hen - xc_hen)**2)+((yb_hen - yc_hen)**2))
+
+
+        document.getElementById("nazwa").innerHTML ="Długość boku BC= "+dlugosca.toFixed(2)+"";  
+   } 
+
+
+
+
+
+
+  function AC_hen() 
+   { 
+var xa_hen= parseFloat(document.getElementById('WSPOxa').value); 
+var ya_hen= parseFloat(document.getElementById('WSPOya').value); 
+
+var xc_hen= parseFloat(document.getElementById('WSPOxc').value); 
+var yc_hen= parseFloat(document.getElementById('WSPOyc').value); 
+
+var dlugosca
+
+dlugosca =  Math.sqrt(((xa_hen - xc_hen)**2)+((ya_hen - yc_hen)**2))
+
+
+        document.getElementById("nazwa").innerHTML ="Długość boku AC= "+dlugosca.toFixed(2)+"";  
+   } 
+   
+ </script> 
+
+
+
+  <h1>Trenkent</h1><br><br> 
+  Podaj współżędne xa: <input type="text" id="WSPOxa" value=""> <br><br>
+  Podaj współżędne ya: <input type="text" id="WSPOya" value=""> <br><br>
+  
+  Podaj współżędne xb: <input type="text" id="WSPOxb" value=""> <br><br>
+  Podaj współżędne yb: <input type="text" id="WSPOyb" value=""> <br><br>
+  
+  Podaj współżędne xc: <input type="text" id="WSPOxc" value=""> <br><br>
+  Podaj współżędne yc: <input type="text" id="WSPOyc" value=""> <br><br>
+  <br> 
+<input type="button" name="Dlugoscab" value="Oblicz długość AB" Onclick="AB_hen()"><br><br>
+ <input type="button" name="Dlugoscbc" value="Oblicz długość BC" Onclick="BC_hen()"><br><br>
+ <input type="button" name="Dlugoscac" value="Oblicz długość AC" Onclick="AC_hen()"><br><br>
+<!-- <input type="button" name="pole" value="Oblicz pole" Onclick="pole()"><br><br> 
+ <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod()"><br><br>-->
+  <div  style="color:rgb(117, 10, 198);font-size:50px;"id="nazwa"></div> 
+
+
+</body> 
+</html> 
+        </textarea>
+</body> 
+</html>
